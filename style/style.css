@@ -1,9 +1,9 @@
 body{
     background: #eee;
 }
-.col-md-4{
+/*.col-md-4{
     width: 100%;
-}
+}*/
 .search-bar {
     margin: 20px;
     text-align: center;
@@ -26,9 +26,8 @@ body{
     text-align: left;
 }
 .list-group{
-    margin: 20px auto;
+    margin: 10px auto;
     text-align: left;
-    width: 100%;
 }
 .list-group-item {
     cursor: pointer;
