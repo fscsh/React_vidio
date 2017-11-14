@@ -1,4 +1,6 @@
-
+body{
+    background: #eee;
+}
 .col-md-4{
     width: 100%;
 }
@@ -20,12 +22,22 @@
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
+    width: 100%;
+    text-align: left;
 }
-
+.list-group{
+    margin: 20px auto;
+    text-align: left;
+    width: 100%;
+}
 .list-group-item {
     cursor: pointer;
+    background-color: #eee;
 }
 
 .list-group-item:hover {
-    background-color: #eee;
+    background-color: white;
+}
+.embed-responsive{
+    margin-top: 10px;
 }
