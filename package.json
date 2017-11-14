@@ -8,7 +8,7 @@
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
     "test:watch": "npm run test -- --watch",
     "build": "webpack -d",
-    "homepage": "https://fscsh.github.io/React_video",
+    "homepage": "https://fscsh.github.io/React_vidio",
     "deploy" : "npm run build&&gh-pages -d ."
   },
   "author": "",
