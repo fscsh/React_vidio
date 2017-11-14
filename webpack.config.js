@@ -4,7 +4,7 @@ module.exports = {
   ],
   output: {
     path: __dirname,
-    publicPath: '/',
+    publicPath: '/React_vidio/',
     filename: 'bundle.js'
   },
   module: {
