@@ -1,19 +1,30 @@
-import React from 'react';
+import React,{Component} from 'react';
 import ReactDOM from 'react-dom';
-
-
+import YTSearch from 'youtube-api-search';
+import VideoList from './components/video_list'
 import SearchBar from './components/searchbar';
 
-const API_KEY = 'AIzaSyAyWwE-AzNH_T9WegSN5mTx2iKI3ryy_Co';
+const API_KEY = 'AIzaSyAm7AqeI5ARrqy4cdqDOUeAVS0fTzLVVBo';
 
-const App = () =>{
+class App extends Component{
+
+        constructor(props){
+        super(props);
+        this.state = { videos: []};
+        YTSearch({ key: API_KEY, term: 'country music'}, (videos) =>{
+            this.setState({ videos: videos});
+        });
+
+    }
+
+    render(){
     return(
         <div>
             <SearchBar />
+            <VideoList videos = {this.state.videos} />
         </div>
     );
 }
+}
 
-ReactDOM.render(
-    <App />
-  , document.querySelector('.container'));
+ReactDOM.render(<App />, document.querySelector('.container'));
