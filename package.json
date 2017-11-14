@@ -9,7 +9,7 @@
     "test:watch": "npm run test -- --watch",
     "homepage": "https://fscsh.github.io/React_vidio",
     "build": "webpack -d",
-    "deploy": "webpack -d &&gh-pages -d ."
+    "deploy": "webpack -p && gh-pages -d ."
   },
   "author": "",
   "license": "ISC",
